@@ -1,0 +1,168 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.canvas_1{
+		width: 100%;
+		height: 100%;
+	position:fixed;
+	z-index: -2;
+}
+
+
+body{
+
+	cursor:url("./images/a1.ico"),pointer;
+}
+
+@font-face {
+  font-family:MyNewFont;   /*字体名称*/
+  src: url("digifaw.ttf");       /*字体源文件*/
+}
+
+/*box-shadow: 2px 4px 6px #000; 
+0px : 表示水平阴影的位置 
+4px : 表示垂直阴影的位置 
+6px : 表示模糊距离 
+#000 ： 表示阴影的颜色（#000 黑色） 
+*/
+.top-header {
+	background: #61cdf6;
+	width: 100%;
+	height: 80px;
+	-webkit-box-shadow:0 1px 2px rgba(88,88,88,0.0);
+	-moz-box-shadow:0 1px 2px rgba(88,88,88,0.0);
+	box-shadow:0 1px 8px rgba(88,88,88,0.0);
+	position:fixed;
+	z-index: -2;
+}
+
+.img_wx{
+	right:50px;
+	top:20px;
+	width: auto;
+	height: auto;
+	max-width: 40px;
+	max-height: 40px;
+	float: right;
+	position:fixed;
+	vertical-align: middle;
+	z-index: -1;
+	
+}
+
+.img_qrc{
+	right:10px;
+	top:70px;
+	width: auto;
+	height: auto;
+	max-width: 120px;
+	max-height: 120px;
+	float: right;
+	position:fixed;
+	vertical-align: middle;
+	visibility: hidden;
+	-webkit-box-shadow:6px 6px 6px rgba(0,0,0,0.6);
+	-moz-box-shadow:6px 6px 6px rgba(0,0,0,0.6);
+	box-shadow:6px 6px 6px rgba(0,0,0,0.6);
+	z-index: -1;
+	pointer-events:none;
+}
+
+
+.img_bg{
+	width: 100%;
+	height: auto;
+	animation: scale;/*动画名称*/ 
+	animation-iteration-count: infinite;
+	animation-timing-function:linear;
+	animation-duration: 50s; 
+	position:absolute;
+	overflow: hidden;
+	z-index: -5;
+}
+
+.record{
+		width: 100%;
+		height: 5%;
+	position:absolute;
+	z-index: -5;
+	
+	bottom: 0;
+	display: flex;
+		z-index: 999;
+	
+}
+
+
+
+#time_text{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+	color: #ffffff;
+	font-size: 100px;
+	font-family:MyNewFont;
+	text-shadow:5px 5px 2px #111111;
+	pointer-events:none;
+}
+
+
+canvas{ 
+	top: 0px; 
+	left: 0px; 
+	width: 100%; 
+	height: 100%; 
+	z-index: -3; 
+	position: absolute; 
+}
+
+@keyframes scale {  
+0% { transform: scale(1.0); }
+50% { transform: scale(1.2); }
+100% { transform: scale(1.0); }
+} 
+
+
+@keyframes fade-in {  
+0%   {right:-125px;}
+40%  {right:20px}
+100% {right:10px;}
+}  
+
+@-moz-keyframes fade-in {  
+0%   {right:-125px;}
+40%  {right:20px}
+100% {right:10px;}
+} 
+
+@-webkit-keyframes fade-in {  
+0%   {right:-125px;}
+40%  {right:20px}
+100% {right:10px;}
+} 
+
+@-o-keyframes fade-in {  
+0%   {right:-125px;}
+40%  {right:20px}
+100% {right:10px;}
+} 
+
+@keyframes fade-out {  
+0%   {right:0px;}
+100% {right:-120px;}
+}
+@-moz-keyframes fade-out {  
+0%   {right:0px;}
+100% {right:-120px;}
+}
+@-webkit-keyframes fade-out {  
+0%   {right:0px;}
+100% {right:-120px;}
+}
+@-o-keyframes fade-out {  
+0%   {right:0px;}
+100% {right:-120px;}
+}
