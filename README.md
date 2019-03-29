@@ -3,4 +3,4 @@
 https://www.inksnow.ink/starts/
 
 
-我的主页：https://www.inksnow.ink
+我的主页：www.inksnow.ink
